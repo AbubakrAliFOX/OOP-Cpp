@@ -34,6 +34,12 @@ public:
         _CurrentValue /= Val;
     }
 
+    void Multiply (float Val) {
+        _CurrentOperation = "Multiplying";
+        _OperationValue = Val;
+        _CurrentValue *= Val;
+    }
+
     
 
     void PrintResult () {
@@ -53,6 +59,13 @@ int main()
     Calculator1.Subtract(50);
     Calculator1.PrintResult();
     Calculator1.Divide(5);
+    Calculator1.PrintResult();
+
+
+    Calculator1.Clear();
+    Calculator1.Add(5);
+    Calculator1.PrintResult();
+    Calculator1.Multiply(22);
     Calculator1.PrintResult();
 
 
