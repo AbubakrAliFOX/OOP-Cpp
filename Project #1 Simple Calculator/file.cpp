@@ -22,6 +22,14 @@ public:
         _CurrentValue += Val;
     }
 
+    void Subtract (float Val) {
+        _CurrentOperation = "Subtracting";
+        _OperationValue = Val;
+        _CurrentValue -= Val;
+    }
+
+    
+
     void PrintResult () {
         cout << "\nResult after " << _CurrentOperation << " " << _OperationValue << " is: " << _CurrentValue;
     }
@@ -36,7 +44,7 @@ int main()
     Calculator1.Clear();
     Calculator1.Add(20);
     Calculator1.PrintResult();
-    Calculator1.Add(50);
+    Calculator1.Subtract(50);
     Calculator1.PrintResult();
 
 
