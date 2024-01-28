@@ -28,6 +28,12 @@ public:
         _CurrentValue -= Val;
     }
 
+    void Divide (float Val) {
+        _CurrentOperation = "Dividing";
+        _OperationValue = Val;
+        _CurrentValue /= Val;
+    }
+
     
 
     void PrintResult () {
@@ -42,9 +48,11 @@ int main()
     Calculator Calculator1;
 
     Calculator1.Clear();
-    Calculator1.Add(20);
+    Calculator1.Add(100);
     Calculator1.PrintResult();
     Calculator1.Subtract(50);
+    Calculator1.PrintResult();
+    Calculator1.Divide(5);
     Calculator1.PrintResult();
 
 
