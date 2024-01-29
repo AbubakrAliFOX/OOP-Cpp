@@ -145,18 +145,13 @@ public:
 
     void printDetails()
     {
-        cout << "\nYour Details:";
-        cout << "\n===================================================\n";
-        cout << "ID: " << ID() << endl;
-        cout << "First Name: " << firstName() << endl;
-        cout << "Last Name: " << lastName() << endl;
-        cout << "Full Name: " << fullName() << endl;
+        Person::printDetails();
+
+        cout << "\nEmployee Details: \n";
+        
         cout << "Title: " << title() << endl;
         cout << "Department: " << department() << endl;
         cout << "Salary: " << salary() << endl;
-        cout << "Email: " << email() << endl;
-        cout << "Phone Number: " << phoneNumber() << endl;
-        cout << "===================================================\n";
     }
 };
 
